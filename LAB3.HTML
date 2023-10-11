@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>JAVA SCRIPT LAB</title>
+    <script>
+        var x=0;
+        function add(){
+            x=x+1000
+            document.querySelector("#d").innerHTML=x;
+        }
+        function showalert(){
+            if(x>1000 && x<=5000)
+            alert("project member salary value is ${x} ");
+            if(x>5000 && x<=10000)
+            alert("project manager slary value is ${x}");
+        }
+    </script>
+</head>
+<body>
+   <h1>sales category</h1> 
+   <h1 id="d">0</h1>
+   <button onclick="add()">+1000</button>
+   <button onclick="showalert()">check category</button>
+</body>
+</html>
